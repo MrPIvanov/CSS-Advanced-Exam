@@ -4,6 +4,10 @@
     padding: 2em;
 }
 
+.site-main {
+    margin-top: 3em;
+}
+
 
 @media ( min-width: 1024px ) {
     .site-header {

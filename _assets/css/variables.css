@@ -8,7 +8,8 @@
 
     --color-body-text: #000;
     --color-body-bgrd: #FFF;
-    --color-link-default: #A00;
+    --color-bcg-default: rgb(232, 234, 236);
+    --color-link-default: rgb(50, 7, 170);
 
     --color-border-default: #999;
 
