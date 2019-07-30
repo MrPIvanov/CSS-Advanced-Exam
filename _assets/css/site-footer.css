@@ -16,8 +16,32 @@
     font-size: 1.5em;
     font-weight: 600;
     color: var(--color-link-default);
+    padding-bottom: 1em;
 }
 
-.site-footer-button {
-    
+.site-footer-info {
+    font-size: 1.2em;
+    /* border-bottom: 1px solid var(--color-link-default); */
+    margin-bottom: 0.5em;
+}
+
+.footer-icons {
+    font-size: 3em;
+    color: var(--color-link-default);
+}
+
+.site-footer-info a {
+    color: black;
+}
+
+.footer-icons i {
+    border: 2px solid transparent;
+}
+
+.footer-icons i:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    background: black;
+    border-radius: 0.2em;
+    color: var(--color-bcg-default);
 }
