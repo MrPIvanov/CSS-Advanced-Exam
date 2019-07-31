@@ -12,13 +12,13 @@ permalink: /news/
     </header>
 
     <div class="content">
-        <div class="posts-headers">
+        <div class="news-headers">
             {% for post in site.posts %}
             <div class="single-news">
                 <a href="{{ site.baseurl }}{{ post.url }}" class="news-header">
                     <h2 class="news-title"> {{ post.title }}</h2>
                     <h5 class="news-subtitle">{{ post.subtitle }}</h5>
-                    <div class="post-media">
+                    <div class="news-media">
                         <img src="{{ post.img }}" alt="">
                     </div>
                 </a>    

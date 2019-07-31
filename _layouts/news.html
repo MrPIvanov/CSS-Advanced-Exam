@@ -24,11 +24,12 @@
 
         <main class="site-main">
 
-            <h2 class="layout-post-title">{{ page.title }}</h2>
-            <div class="layout-post-media">
+            <h2 class="layout-news-title">{{ page.title }}</h2>
+            <div class="layout-news-media">
                 <img src="{{ page.img }}" alt="">
             </div>
-            <div class="layout-post-content"> {{content}}</div>
+            <div class="layout-news-content"> {{content}}</div>
+            <div class="go-back-wrapper"><a href="{{ site.baseurl }}/news/">Go Back</a></div>
         </main>
 
         <footer class="site-footer">
