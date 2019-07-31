@@ -8,18 +8,20 @@ permalink: /news/
 <section>
 
     <header>
-        <h2>Latest News</h2>
+        <h1>Latest News</h1>
     </header>
 
     <div class="content">
-
-        <ul>
+        <div class="posts-headers">
             {% for post in site.posts %}
-                <li>
-                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                </li>
+            <div class="single-news">
+                <a href="{{ site.baseurl }}{{ post.url }}" class="news-header">
+                    <h3 class="news-title"> {{ post.title }}</h3>
+                    <h5 class="news-subtitle">{{ post.subtitle }}</h5>
+                    <div class="news-media" style="background: url({{ post.img }}) center center;"></div>
+                </a>
+            </div>
             {% endfor %}
-        </ul>
-            
+        </div>
     </div>
 </section>
