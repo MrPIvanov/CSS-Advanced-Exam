@@ -10,24 +10,13 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
 </head>
 
-<body class="
-    {% if page.title %}page page-{{ page.title | slugify }}{% endif %}
-    {% if post.title %}post{% endif %}
-    {% if page.home %}home{% endif %}
-">
+<body>
     <div class="site">
 
         <header class="site-header">
-
-            {% if page.home == true %}
             <h1 class="site-title">
                 <a href="{{ site.baseurl }}/">{{site.title}}</a>
             </h1>
-            {% else %}
-            <p class="site-title">
-                <a href="{{ site.baseurl }}/">{{site.title}}</a>
-            </p>
-            {% endif %}
 
             {% include navigation.html location="header" %}
 
