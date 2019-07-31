@@ -1,7 +1,22 @@
 .tokensale-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1em;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2em;
+}
+
+.tokensale-main-heading {
+    text-align: center;
+    margin: 2em;
+    font-weight: 700;
+}
+
+.tokensale-second-heading {
+    text-align: center;
+}
+
+.tokensale-second-info {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .tokensale-card {
@@ -10,29 +25,82 @@
     border-radius: 1em;
     text-align: center;
     overflow: hidden;
+    grid-column: span 6;
 }
 
 .tokensale-card header {
-    padding: 0;
+    padding: 1em;
     margin: 0;
-    background: rgb(25, 170, 248);
+    background: var(--color-tokensale-main);
     color: var(--color-bcg-default);
 }
 
 .tokensale-card main {
-    background: rgb(212, 232, 243);
+    background: var(--color-tokensale-bgrd);
+    padding: 1em;
 }
 
 .tokensale-card main h3 {
     margin: 0;
 }
 
+.tokensale-card main ul {
+    padding: 0;
+    margin: 2em;
+}
+
+.tokensale-card main li {
+    list-style: none;
+    color: red;
+    text-align: center;
+    font-size: 1.2em;
+}
+
 .tokensale-card footer {
-    padding-top: 2em;
-    background: rgb(212, 232, 243);
+    padding: 2em;
+    background: var(--color-tokensale-bgrd);
 }
 
 .tokensale-card footer a {
-    border: 3px solid black;
     padding: 1em;
+    background: var(--color-btn-bgrd);
+    color: var(--color-btn-text);
+    border: 2px solid transparent;
+    font-weight: 700;
+    border-radius: 1em;
+}
+
+.tokensale-card footer a:hover {
+    cursor: pointer;
+    background: var(--color-btn-text);
+    color: var(--color-btn-bgrd);
+    border: 2px solid black;
+}
+
+.dashed {
+    text-decoration: line-through;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.tokensale-card footer a.disabled:hover {
+    cursor: auto;
+    background: var(--color-btn-bgrd);
+    color: var(--color-btn-text);
+    border: 2px solid black;
+}
+
+@media ( min-width: 900px ) {
+    .tokensale-card {
+        grid-column: span 3;
+    }
+}
+
+@media ( min-width: 1200px ) {
+    .tokensale-card {
+        grid-column: span 2;
+    }
 }
