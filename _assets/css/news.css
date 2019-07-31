@@ -39,6 +39,10 @@
     text-align: center;
 }
 
+.single-news a {
+    height: 100%;
+}
+
 .news-media img{
     width: 100%;
     height: auto;
@@ -92,7 +96,7 @@
     }
 }
 
-@media ( min-width: 1200px ) {
+@media ( min-width: 1024px ) {
     .single-news {
         grid-column: span 2;
     }

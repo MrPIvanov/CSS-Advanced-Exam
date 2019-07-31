@@ -21,7 +21,7 @@
     justify-content: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 750px) {
     .gallery li {
         flex: 0 0 47%;
         margin-bottom: 6%;

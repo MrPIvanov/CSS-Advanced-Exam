@@ -114,7 +114,7 @@
     }
 }
 
-@media ( min-width: 1200px ) {
+@media ( min-width: 1024px ) {
     .tokensale-card {
         grid-column: span 2;
     }
