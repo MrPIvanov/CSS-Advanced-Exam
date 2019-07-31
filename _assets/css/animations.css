@@ -66,13 +66,21 @@
 
 @keyframes fadeInWithMovementAtRight{
     0%{
-        opacity: 0;
         transform: translateX(-3rem);
     }
 
     100%{
-        opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes fadeInWithMovementFromBottom{
+    0%{
+        transform: translateY(33rem);
+    }
+
+    100%{
+        transform: translateY(0);
     }
 }
 
