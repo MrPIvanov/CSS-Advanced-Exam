@@ -5,9 +5,6 @@
     background: var(--color-bcg-default);
     border-radius: 1em;
     box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75); */
-
-
-
     margin-top: 3em;
     text-align: center;
 }
@@ -36,12 +33,12 @@
 
 .footer-icons i {
     border: 2px solid transparent;
-}
 
-.footer-icons i:hover {
-    cursor: pointer;
-    border: 2px solid black;
-    background: black;
-    border-radius: 0.2em;
-    color: var(--color-bcg-default);
+    &:hover {
+        cursor: pointer;
+        border: 2px solid black;
+        background: black;
+        border-radius: 0.2em;
+        color: var(--color-bcg-default);
+    }
 }

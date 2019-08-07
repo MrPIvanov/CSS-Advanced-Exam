@@ -1,46 +1,59 @@
-.site-nav > ul {
-    display: flex;
-    padding: 0;
+.site-nav {
+    >ul {
+        display: flex;
+        padding: 0;
+    }
+
+    li {
+        display: block;
+        list-style: none outside;
+        padding: 0 0.5em;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 0.5em 1em;
+        border-radius: 0.3em;
+        background: #EEE;
+
+        &:hover {
+            background: var(--color-link-default);
+            color: var(--color-body-bgrd);
+        }
+
+        i.fas:before {
+            color: var(--color-link-default);
+            margin-right: 0.5em;
+        }
+
+        &:hover i.fas:before {
+            color: #FFF;
+        }
+    }
 }
 
-.site-nav li {
-    display: block;
-    list-style: none outside;
-    padding: 0 0.5em;
-}
-
-.site-nav li:first-child {
-    padding-left: 0;
-}
-
-.site-nav a {
-    display: block;
-    padding: 0.5em 1em;
-    border-radius: 0.3em;
-    background: #EEE;
-}
-
-.site-nav a:hover {
-    background: var(--color-link-default);
-    color: var(--color-body-bgrd);
-}
-
-.site-nav a i.fas:before {
-    color: var(--color-link-default);
-    margin-right: 0.5em;
-}
-
-.site-nav a:hover i.fas:before {
-    color: #FFF;
-}
-
-header nav ul li{
+header nav ul li {
     opacity: 0;
     animation: shake 0.1s linear;
     animation-fill-mode: both;
-}
 
-header nav ul li:first-child {animation-delay: 0.2s;}
-header nav ul li:nth-child(2){animation-delay: 0.3s;}
-header nav ul li:nth-child(3){animation-delay: 0.4s;}
-header nav ul li:nth-child(4){animation-delay: 0.5s;}
+    &:first-child {
+        animation-delay: 0.2s;
+    }
+
+    &:nth-child(2) {
+        animation-delay: 0.3s;
+    }
+
+    &:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+
+    &:nth-child(4) {
+        animation-delay: 0.5s;
+    }
+}

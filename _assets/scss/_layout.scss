@@ -8,15 +8,13 @@
     margin-top: 3em;
 }
 
-
-@media ( min-width: 1024px ) {
+@media (min-width: 1024px) {
     .site-header {
         display: flex;
         align-items: center;
-    }
 
-    .site-header nav {
-        margin-left: auto;
+        nav {
+            margin-left: auto;
+        }
     }
-    
 }

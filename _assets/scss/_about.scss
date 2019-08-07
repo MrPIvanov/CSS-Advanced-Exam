@@ -1,28 +1,28 @@
 .about-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
 
-.about-wrapper div {
-    grid-column: span 2;
-}
+    div {
+        grid-column: span 2;
+    }
 
-.about-wrapper .about-info {
-    text-align: center;
-}
+    .about-info {
+        text-align: center;
 
-.about-wrapper .about-info ul {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
+        ul {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
 
-.about-wrapper .about-info li{
-    list-style: none;
-    font-size: 1.2em;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+        li {
+            list-style: none;
+            font-size: 1.2em;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+    }
 }
 
 .content .about-btn-p {
@@ -30,7 +30,7 @@
     text-align: center;
 }
 
-.about-btn{
+.about-btn {
     background: var(--color-bcg-default);
     color: var(--color-link-default);
     border: 2px solid transparent;
@@ -38,10 +38,10 @@
     border-radius: 1em;
     padding: 1em 5em 1em 5em;
     font-size: 1.5em;
-}
 
-.about-btn:hover{
-    opacity: 0;
+    &:hover {
+        opacity: 0;
+    }
 }
 
 .about-map {
@@ -49,20 +49,20 @@
     background-size: cover;
     border-radius: 1em;
     border: 1px solid white;
-    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.75);
     opacity: 0;
+
+    &:before {
+        display: block;
+        content: "We are here Somewhere ?!?";
+        color: white;
+        text-align: center;
+        font-size: 1em;
+    }
 }
 
-.about-map:before {
-    display: block;
-    content: "We are here Somewhere ?!?";
-    color: white;
-    text-align: center;
-    font-size: 1em;
-}
-
-@media ( min-width: 750px ) {
-    .about-wrapper div  {
+@media (min-width: 750px) {
+    .about-wrapper div {
         grid-column: span 1;
     }
 

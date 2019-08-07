@@ -1,12 +1,11 @@
 .gallery {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-.gallery li {
+  li {
     flex: 0 0 100%;
     margin-bottom: 3%;
     list-style: none outside;
@@ -19,108 +18,149 @@
     flex-direction: column;
     align-content: center;
     justify-content: center;
-}
 
-@media (min-width: 750px) {
-    .gallery li {
-        flex: 0 0 47%;
-        margin-bottom: 6%;
+    @include monitorSize (mobile) {
+      flex: 0 0 47%;
+      margin-bottom: 6%;
     }
-}
 
-@media (min-width: 1024px) {
-    .gallery li {
-        flex: 0 0 30%;
-        margin-bottom: 5%;
+    @include monitorSize (desktop) {
+      flex: 0 0 30%;
+      margin-bottom: 5%;
     }
-}
 
-.gallery li:nth-child(2) { animation-delay: 0.2s; }
-.gallery li:nth-child(3) { animation-delay: 0.3s; }
-.gallery li:nth-child(4) { animation-delay: 0.4s; }
-.gallery li:nth-child(5) { animation-delay: 0.5s; }
-.gallery li:nth-child(6) { animation-delay: 0.6s; }
-.gallery li:nth-child(7) { animation-delay: 0.7s; }
-.gallery li:nth-child(8) { animation-delay: 0.8s; }
-.gallery li:nth-child(9) { animation-delay: 0.9s; }
-.gallery li:nth-child(10) { animation-delay: 1.0s; }
-.gallery li:nth-child(11) { animation-delay: 1.1s; }
+    @for $i from 2 through 11 {
+      &:nth-child(#{$i}) {
+        animation-delay: #{$i/10}s;
+      }
+    }
 
-.gallery li:before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
-}
+    // &:nth-child(2) {
+    //   animation-delay: 0.2s;
+    // }
 
-.gallery li:hover:before {
-    opacity: 1;
-}
+    // &:nth-child(3) {
+    //   animation-delay: 0.3s;
+    // }
 
-.gallery a {
+    // &:nth-child(4) {
+    //   animation-delay: 0.4s;
+    // }
+
+    // &:nth-child(5) {
+    //   animation-delay: 0.5s;
+    // }
+
+    // &:nth-child(6) {
+    //   animation-delay: 0.6s;
+    // }
+
+    // &:nth-child(7) {
+    //   animation-delay: 0.7s;
+    // }
+
+    // &:nth-child(8) {
+    //   animation-delay: 0.8s;
+    // }
+
+    // &:nth-child(9) {
+    //   animation-delay: 0.9s;
+    // }
+
+    // &:nth-child(10) {
+    //   animation-delay: 1.0s;
+    // }
+
+    // &:nth-child(11) {
+    //   animation-delay: 1.1s;
+    // }
+
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease-in;
+    }
+
+    &:hover:before {
+      opacity: 1;
+    }
+  }
+
+  a {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1em;
-}
+  }
 
-.gallery span {
+  span {
     display: block;
     position: relative;
-}
 
-.gallery span:before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.5);
-    transition: opacity 0.3s ease-in;
-}
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      transition: opacity 0.3s ease-in;
+    }
 
-.gallery span:after {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-}
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
 
-.gallery a:hover span:before {
+  a:hover span:before {
     opacity: 0;
-}
+  }
 
-.gallery img {
+  img {
     display: block;
     width: 100%;
     height: auto;
-}
+  }
 
-.gallery .name {
+  .name {
     padding: 0.2em;
     text-align: center;
     font-weight: 900;
     font-size: 1.5em;
     padding-top: 1em;
-}
+  }
 
-.gallery .info {
+  .info {
     padding: 1em;
     text-align: center;
     font-style: italic;
-}
+  }
 
-.gallery .job {
+  .job {
     padding: 1em;
     text-align: center;
     font-weight: 700;
     font-size: 1.2em;
-}
+  }
 
-.gallery .icons {
+  .icons {
     text-align: center;
     font-size: 1.7em;
     font-weight: 800;
+  }
 }
