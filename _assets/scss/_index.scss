@@ -3,67 +3,68 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0;
     margin-top: -2em;
-}
 
-.index-container header {
-    grid-column: span 2;
-    text-align: center;
-    background: url("https://images.unsplash.com/photo-1552057426-9f23e61fa7b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80") no-repeat center center;
-    background-size: cover;
-    height: 70vh;
-    opacity: 1;
-}
+    header {
+        grid-column: span 2;
+        text-align: center;
+        background: url("https://images.unsplash.com/photo-1552057426-9f23e61fa7b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80") no-repeat center center;
+        background-size: cover;
+        height: 70vh;
+        opacity: 1;
 
-.index-container header h2 {
-    display: inline-block;
-    margin-top: 15vh;
-    font-size: 3em;
-    opacity: 1;
-    color: black;
-    font-weight: 900;
-    border: 1px solid transparent;
-    border-radius: 1em;
-    padding: 0.3em;
-    text-shadow: 1px 1px 0px #FFFFFF, 2px 2px 0px rgba(0, 0, 0, 0.5);
-    text-transform: uppercase;
-}
+        h2 {
+            display: inline-block;
+            margin-top: 15vh;
+            font-size: 3em;
+            opacity: 1;
+            color: black;
+            font-weight: 900;
+            border: 1px solid transparent;
+            border-radius: 1em;
+            padding: 0.3em;
+            text-shadow: 1px 1px 0px #FFFFFF, 2px 2px 0px rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
 
-.index-container header h2:hover {
-    border: 1px solid white;
-}
+            &:hover {
+                border: 1px solid white;
+            }
+        }
+    }
 
-.index-container main {
-    grid-column: span 2;
+    main {
+        grid-column: span 2;
+    }
 }
 
 .features-container {
     height: 45vh;
     background: rgb(244, 244, 244);
     display: block;
-}
 
-.features-container ul {
-    text-align: center;
-    padding: 2em;
-    display: flex;
-    justify-content: space-evenly;
-    // flex-wrap: wrap;
-}
+    ul {
+        text-align: center;
+        padding: 2em;
+        display: flex;
+        justify-content: space-evenly;
+        // flex-wrap: wrap;
 
-.features-container li {
-    display: inline-block;
-    width: 22em;
-}
+    }
 
-.features-container i {
-    margin-top: 0.4em;
-    margin-bottom: 0.4em;
-    font-size: 5em;
-    color: var(--color-link-default);
-}
+    li {
+        display: inline-block;
+        width: 22em;
+    }
 
-.features-container i:hover {
-    transform: scale(1.1);
+    i {
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+        font-size: 5em;
+        color: var(--color-link-default);
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
 
 .main-elements {
@@ -77,55 +78,51 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-}
 
-.single-element .element-info {
-    display: inline-block;
-    width: 50%;
-    position: relative;
-}
-
-.single-element .element-info h2 {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 900;
-}
-
-.single-element .element-info p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.single-element .element-media {
-    display: inline-block;
+    .element-info {
+        display: inline-block;
         width: 50%;
-}
+        position: relative;
 
+        h2 {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 900;
+        }
 
-.single-element .element-media {
-    display: inline-block;
-    background-size: cover;
-    height: 55vh;
-}
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 
-.single-element .pic1 {
-    background: url("https://images.unsplash.com/photo-1517232115160-ff93364542dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=966&q=80") no-repeat center center;
-}
+    .element-media {
+        display: inline-block;
+        width: 50%;
+        display: inline-block;
+        background-size: cover;
+        height: 55vh;
+    }
 
-.single-element .pic2 {
-    background: url("https://images.pexels.com/photos/47047/gold-ingots-golden-treasure-47047.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center;
-}
+    .pic1 {
+        background: url("https://images.unsplash.com/photo-1517232115160-ff93364542dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=966&q=80") no-repeat center center;
+    }
 
-.single-element .pic3 {
-    background: url("https://images.unsplash.com/photo-1507235071172-438ca6950a8e?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80") no-repeat center center;
-}
+    .pic2 {
+        background: url("https://images.pexels.com/photos/47047/gold-ingots-golden-treasure-47047.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center;
+    }
 
-.single-element .pic4 {
-    background: url("https://images.unsplash.com/photo-1559213911-5f3e4ebe094e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center center;
+    .pic3 {
+        background: url("https://images.unsplash.com/photo-1507235071172-438ca6950a8e?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80") no-repeat center center;
+    }
+
+    .pic4 {
+        background: url("https://images.unsplash.com/photo-1559213911-5f3e4ebe094e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center center;
+    }
 }
 
 .index-container footer {
@@ -137,30 +134,32 @@
     height: 30vh;
     background: rgb(244, 244, 244);
     display: block;
+
+    .footer-info {
+        font-weight: 900;
+        padding-top: 2.5em;
+    }
 }
 
-.contact-us .footer-info {
-    font-weight: 900;
-    padding-top: 2.5em;
-}
+.footer-form {
+    input {
+        padding: 0.5em;
+        margin: 0.5em;
+    }
 
-.footer-form input {
-    padding: 0.5em;
-    margin: 0.5em;
-}
+    a {
+        border: 2px solid transparent;
+        background: var(--color-btn-bgrd);
+        font-size: 1.7em;
+        padding: 0.5em;
+        border-radius: 1em;
+        font-weight: 900;
+        color: var(--color-btn-text);
 
-.footer-form a {
-    border: 2px solid transparent;
-    background: var(--color-btn-bgrd);
-    font-size: 1.7em;
-    padding: 0.5em;
-    border-radius: 1em;
-    font-weight: 900;
-    color: var(--color-btn-text);
-}
-
-.footer-form a:hover {
-    border: 2px solid black;
-    background: var(--color-btn-text);
-    color: var(--color-btn-bgrd);
+        &:hover {
+            border: 2px solid black;
+            background: var(--color-btn-text);
+            color: var(--color-btn-bgrd);
+        }
+    }
 }
