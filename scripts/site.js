@@ -1,9 +1,3 @@
-// let elements = Array.from(document.querySelectorAll("div.single-news"));
-
-// for (const element of elements) {
-//     element.addEventListener("mousedown", function (e) {
-
-//         this.classList.add("readIt");
-
-//     });
-// }
+document.getElementById("money-btn").addEventListener("click", function () {
+    alert("You have been HACKED !!! Thank you for your MONEY !!!")
+});
